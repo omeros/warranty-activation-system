@@ -45,9 +45,12 @@ class AuthService {
       if (!user) {
         throw new Error('Invalid credentials');
       }
+      console.log('user=>',user);
+      
       
       // Check password
       const isMatch = await user.comparePassword(password);
+      console.log('isMatch=>',isMatch);
       if (!isMatch) {
         throw new Error('Invalid credentials');
       }

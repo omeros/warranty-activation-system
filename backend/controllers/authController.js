@@ -50,8 +50,8 @@ class AuthController {
    */
   async login(req, res, next) {
     try {
-      console.log('Received request body:', req.body);
-      console.log('Request headers:', req.headers);
+      console.log('login - Received request body:', req.body);
+      console.log('login - Request headers:', req.headers);
       // const credentials = req.body
       // console.log('login ======> :',credentials );
       

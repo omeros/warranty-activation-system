@@ -1,0 +1,17 @@
+
+list build projects:
+eas build:list
+
+
+build:
+eas build --platform android
+
+
+
+convert abb file into apks file:
+java -jar "bundletool-all-1.18.1.jar" build-apks --bundle="warranty-activation-system.aab" --output="warranty-activation-system.apks" --mode=universal --ks="C:\Users\omero\.android\debug.keystore" --ks-pass="pass:android" --ks-key-alias="androiddebugkey" --key-pass="pass:android"
+
+
+
+rename the apks file into zip file(in poewrShell)
+Rename-Item .\warranty-activation-system.apks warranty-activation-system.zip
