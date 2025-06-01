@@ -2,4 +2,4 @@
 /mobile/node_modules/
 /backend/node_modules/
 /backend/.env
-/react_native_scripts
+react_native_scripts.txt
